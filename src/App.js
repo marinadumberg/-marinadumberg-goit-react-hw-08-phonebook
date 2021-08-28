@@ -6,20 +6,20 @@ import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { Switch } from "react-router-dom";
-import { authOperations } from "../redux/auth";
+import { authOperations } from "./redux/auth";
 // import PrivateRoute from './components/PrivateRoute';
 // import PublicRoute from './components/PublicRoute';
 const HomeView = lazy(() =>
-  import("./views/HomeView" /*webpackChunkName: "home-view"*/)
+  import("./views/HomeViews" /*webpackChunkName: "home-view"*/)
 );
 const RegisterView = lazy(() =>
-  import("./views/RegisterView" /*webpackChunkName: "register-view"*/)
+  import("./views/RegisterViews" /*webpackChunkName: "register-view"*/)
 );
 const LoginView = lazy(() =>
-  import("./views/LoginView" /*webpackChunkName: "login-view"*/)
+  import("./views/LoginViews" /*webpackChunkName: "login-view"*/)
 );
-const PhoneBookView = lazy(() =>
-  import("./views/PhoneBookView" /*webpackChunkName: "phonebook-view"*/)
+const PhonebookView = lazy(() =>
+  import("./views/PhonebookView" /*webpackChunkName: "phonebook-view"*/)
 );
 
 export default function App() {
@@ -47,7 +47,7 @@ export default function App() {
             {/* </PublicRoute> */}
 
             {/* <PrivateRoute path="/phonebook"> */}
-            <PhoneBookView />
+            <PhonebookView />
             {/* </PrivateRoute> */}
           </Suspense>
         </Switch>
