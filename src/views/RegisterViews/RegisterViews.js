@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { authOperations } from "../../redux/auth";
+import authOperations from "../../redux/auth/auth-operations";
 import s from "./RegisterViews.module.css";
 
 const styles = {
@@ -39,6 +39,7 @@ export default function RegisterView() {
     setName("");
     setEmail("");
     setPassword("");
+    console.log({ name, email, password });
   };
 
   return (

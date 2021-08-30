@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
 axios.defaults.baseURL = "https://connections-api.herokuapp.com";
 
@@ -12,28 +13,48 @@ const token = {
   },
 };
 
-const register = createAsyncThunk("auth/register", async (credentials) => {
-  try {
-    const { data } = await axios.post("/users/signup", credentials);
-    token.set(data.token);
-    return data;
-  } catch (error) {}
-});
+export const register = createAsyncThunk(
+  "auth/register",
+  async (credentials, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.post("/users/signup", credentials);
+      token.set(data.token);
+      console.log(data);
+      return data;
+    } catch (error) {
+      toast.error(`Failed! Enter valid data`);
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
 
-const logIn = createAsyncThunk("auth/login", async (credentials) => {
-  try {
-    const { data } = await axios.post("/users/login", credentials);
-    token.set(data.token);
-    return data;
-  } catch (error) {}
-});
+export const logIn = createAsyncThunk(
+  "auth/login",
+  async (credentials, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.post("/users/login", credentials);
+      token.set(data.token);
 
-const logOut = createAsyncThunk("auth/logout", async () => {
-  try {
-    await axios.post("/users/logout");
-    token.unset();
-  } catch (error) {}
-});
+      return data;
+    } catch (error) {
+      toast.error(` Enter valid Email and Password!`);
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+
+export const logOut = createAsyncThunk(
+  "auth/logout",
+  async (_, { rejectWithValue }) => {
+    try {
+      await axios.post("/users/logout");
+      token.unset();
+    } catch (error) {
+      toast.error(` Something goes wrong!`);
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
 
 export const fetchCurrentUser = createAsyncThunk(
   "auth/refresh",
@@ -55,10 +76,10 @@ export const fetchCurrentUser = createAsyncThunk(
   }
 );
 
-const authOperations = {
+const operations = {
   register,
   logOut,
   logIn,
   fetchCurrentUser,
 };
-export default authOperations;
+export default operations;
