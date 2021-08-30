@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/main.94d02fe6.chunk.css",
+    "main.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/main.10a8bea2.chunk.js",
+    "main.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/main.10a8bea2.chunk.js.map",
+    "runtime-main.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/runtime-main.4432815c.js",
+    "runtime-main.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/runtime-main.4432815c.js.map",
+    "static/css/2.0975cee1.chunk.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/2.0975cee1.chunk.css",
+    "static/js/2.716694bc.chunk.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/2.716694bc.chunk.js",
+    "static/js/2.716694bc.chunk.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/2.716694bc.chunk.js.map",
+    "static/css/3.77a8cba9.chunk.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/3.77a8cba9.chunk.css",
+    "static/js/3.a48eb611.chunk.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/3.a48eb611.chunk.js",
+    "static/js/3.a48eb611.chunk.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/3.a48eb611.chunk.js.map",
+    "static/css/4.4b0b1ab1.chunk.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/4.4b0b1ab1.chunk.css",
+    "static/js/4.3e03edda.chunk.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/4.3e03edda.chunk.js",
+    "static/js/4.3e03edda.chunk.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/4.3e03edda.chunk.js.map",
+    "static/css/5.6549b0c0.chunk.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/5.6549b0c0.chunk.css",
+    "static/js/5.39ff5ab7.chunk.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/5.39ff5ab7.chunk.js",
+    "static/js/5.39ff5ab7.chunk.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/5.39ff5ab7.chunk.js.map",
+    "static/css/6.5e096910.chunk.css": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/6.5e096910.chunk.css",
+    "static/js/6.2ce8958e.chunk.js": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/6.2ce8958e.chunk.js",
+    "static/js/6.2ce8958e.chunk.js.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/6.2ce8958e.chunk.js.map",
+    "index.html": "/-marinadumberg-goit-react-hw-08-phonebook/index.html",
+    "static/css/2.0975cee1.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/2.0975cee1.chunk.css.map",
+    "static/css/3.77a8cba9.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/3.77a8cba9.chunk.css.map",
+    "static/css/4.4b0b1ab1.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/4.4b0b1ab1.chunk.css.map",
+    "static/css/5.6549b0c0.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/5.6549b0c0.chunk.css.map",
+    "static/css/6.5e096910.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/6.5e096910.chunk.css.map",
+    "static/css/main.94d02fe6.chunk.css.map": "/-marinadumberg-goit-react-hw-08-phonebook/static/css/main.94d02fe6.chunk.css.map",
+    "static/js/2.716694bc.chunk.js.LICENSE.txt": "/-marinadumberg-goit-react-hw-08-phonebook/static/js/2.716694bc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4432815c.js",
+    "static/css/2.0975cee1.chunk.css",
+    "static/js/2.716694bc.chunk.js",
+    "static/css/main.94d02fe6.chunk.css",
+    "static/js/main.10a8bea2.chunk.js"
+  ]
+}
