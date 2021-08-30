@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { authOperations } from "../redux/auth";
+import { authOperations } from "../../redux/auth";
+import s from "./RegisterViews.module.css";
 
 const styles = {
   form: {
@@ -41,10 +42,10 @@ export default function RegisterView() {
   };
 
   return (
-    <div>
+    <div className={s.container}>
       <h1>Registration</h1>
 
-      <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
+      <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
         <label style={styles.label}>
           Name
           <input type="text" name="name" value={name} onChange={handleChange} />

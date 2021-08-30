@@ -11,10 +11,12 @@ import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
 import authSelectors from "./redux/auth/auth-selectors";
 
-const HomeView = lazy(() => import("./views/HomeViews"));
-const RegisterView = lazy(() => import("./views/RegisterViews"));
-const LoginView = lazy(() => import("./views/LoginViews"));
-const PhonebookView = lazy(() => import("./views/PhonebookView"));
+const HomeView = lazy(() => import("./views/HomeViews/HomeViews"));
+const RegisterView = lazy(() => import("./views/RegisterViews/RegisterViews"));
+const LoginView = lazy(() => import("./views/LoginViews/LoginViews"));
+const PhonebookView = lazy(() =>
+  import("./views/PhoneBookViews/PhonebookView")
+);
 
 export default function App() {
   const dispatch = useDispatch();
